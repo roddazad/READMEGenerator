@@ -77,7 +77,7 @@ const promptUser = ()=> {
       })=> {
         const template = `# ${projectName}
 
-        ${renderLicenseBadge(liscense)}
+        ${renderLicenseBadge(license)}
 
 
         ## Description
@@ -119,7 +119,6 @@ const promptUser = ()=> {
         ## License
         Please provide the license you chose:
         
-        ${license}
         
 
         #contact
