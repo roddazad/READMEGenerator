@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 const markDown = require('./utils/generateMarkdown');
+const renderLicenseBadge = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 
@@ -75,6 +76,8 @@ const promptUser = ()=> {
         license
       })=> {
         const template = `# ${projectName}
+
+        ${renderLicenseBadge(liscense)}
 
 
         ## Description
